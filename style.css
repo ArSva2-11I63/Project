@@ -19,7 +19,9 @@ html {
   .main-container {
     height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-image: url("./.11.png");
+    background-image: url("./abc.png");
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;    
   }
