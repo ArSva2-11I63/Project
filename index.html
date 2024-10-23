@@ -1,150 +1,42 @@
- <!DOCTYPE html>
- <html>
 
-<head>
-  <meta charset="utf-8">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-  <link href="style.css" rel="stylesheet">
-  <title>Bootstrap demo</title>
-
-
-  <style>
-    
-  </style>
-  
-</head>
-
-<body>
-
-  
-  <nav id="navbar-example2" class="navbar px-3 mb-3">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading1">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading2">Services</a>
-      </li>
-      <li class="nav-item"></li>
-        <a class="nav-link" href="#scrollspyHeading4">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#scrollspyHeading3">Hobbies</a>
-      </li>
-    </ul>
-  </nav>
-
-  
-
- 
-
-  <div class="main-container container">
-   </div>
-
-  
-  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-    <h4 id="scrollspyHeading1">About Me</h4>
-    <p>My name is Aarush Srivastava, a passionate student who enjoys coding a lot. I have some experience in coding.</p><br><br>
-
-
-    <h4 id="scrollspyHeading4">Projects</h4>
-    <p><div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title">📱 Calculator 📱</h5>
-        <p class="card-text">This is a calculator to solve mathematical problems.</p>
-        <a href="https://github.com/ArSva2-11I63/Project/blob/links/calculator.html" class="btn btn-primary">Calculator</a>
-      </div>
-    </div></p>
-
-
-    
-    <h4 id="scrollspyHeading2">Services</h4>
-    <p></p>
-    <p>I provide services in the following areas:</p>
-    <ul>
-     <b>
-      <li>🚀 Project work 🚀</li>
-      <li>🎨 Designing 🎨</li>
-      <li>📜 Certifications 📜</li>
-      <li>📊 Presentations 📊</li>
-    </b> 
-    </ul>
-    <h4 id="scrollspyHeading3">Hobbies</h4>
-    <p><div class="container bg-primary-subtle text-primary-emphasis border border-primary">
-       <h1>🎵 Music 🎵</h1>
-       <p>Reasons:
-        <ol>
-            <li>It feels good.</li>
-            <li>It helps to express emotions.</li>
-        </ol>
-          
-        
-     </div>  
-    <br>
-     <div class="container bg-info-subtle text-info-emphasis border border-info">
-       <h1>💧💦 Swimming 💦💧</h1>
-       <p>Reasons:
-        <ol>
-            <li>It is a form of exercise.</li>
-            <li>It cools you down.</li>
-        </ol>
-       </p>
-     </div>
-    <br>
-     <div class="container bg-success-subtle text-success-emphasis border border-success">
-       <h1>♟️ Chess ♟️</h1>
-       <p>Reasons:
-        <ol>
-            <li>It is a mind game.</li>
-            <li>It makes you think of different strategies.</li>
-        </ol>
-       </p>
-     </div>
-    <br>
-     <div class="container bg-danger-subtle text-danger-emphasis border border-danger">
-       <h1>📟 Coding 📟</h1>
-       <p>Reasons:
-        <ol>
-            <li>It increases creativity.</li>
-            <li>It helps in problem solving skills.</li>
-        </ol>
-       </p>
-     </div>
-    
-  </div>
-        </form>
-      </div>
-    </div>
-  </nav>
-<br>
-
-<footer>
- <div class="container bg-tertiary border border-tertiary-emphasis"> 
- <center><h5 class="text-secondary">Meet me on social media!</h5>
-
-
-  <div> 
-  &nbsp; &nbsp; &nbsp; <a href="#" class="btn btn-primary bg-warning-subtle border border-warning text-warning-emphasis" >Facebook</a>
-  &nbsp; &nbsp; &nbsp; <a href="#" class="btn btn-primary bg-success-subtle border border-success text-success-emphasis">Youtube</a>
-  &nbsp; &nbsp; &nbsp; <a href="#" class="btn btn-primary bg-danger-subtle border border-danger text-danger-emphasis">Linkedin</a>
-  &nbsp; &nbsp; &nbsp; <a href="#" class="btn btn-primary bg-primary-subtle border border-primary text-primary-emphasis">Whatsapp</a><br><br>
- </div>
- 
- <div>
-  <h6 class="text-secondary">Copyright &copy; 2024 All Rights Reserved</h6>
- </div>
-
- </center>
-</footer>
-</div>
-
-  
-  
-
-
-  
-</body>
-
-</html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>A simple calculator</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="calculator">
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				<div id="keyboard">
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="backspace">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+					<button class="empty" id="empty"></button>
+					<button class="number" id="0">0</button>
+					<button class="empty" id="empty"></button>
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
